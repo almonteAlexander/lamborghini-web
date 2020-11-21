@@ -1,0 +1,26 @@
+@import './variables';
+@import './nav';
+@import './header';
+@import './menu';
+@import './models-section';
+@import './concessionaire-section';
+@import './news-section';
+@import './footer';
+@import './media';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1360px;
+    margin: 0;
+    padding: 0;
+    background: #181818;
+}
+
+h1, h2, h3, p, li, img, div{
+    user-select: none;
+    -webkit-user-drag: none;
+}

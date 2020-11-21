@@ -1,0 +1,88 @@
+.news {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  background: #F3F3F3;
+  font-family: "Roboto", "sans-serif";
+  color: #202020;
+}
+.news .title {
+  padding: 50px 0 0 0;
+  margin-left: clamp(5px, 5vw, 70px);
+  font-size: clamp(25px, 5vw, 40px);
+}
+.news .subtitle {
+  padding: 10px 0 0 0;
+  margin-left: clamp(5px, 5vw, 70px);
+  font-size: clamp(35px, 5vw, 70px);
+}
+.news .main__date {
+  font-size: 20px;
+  margin-left: clamp(5px, 5vw, 70px);
+}
+.news .main__title {
+  font-size: clamp(20px, 5vw, 35px);
+  padding: 0.5em 0 0 0;
+  margin-left: clamp(5px, 5vw, 70px);
+  width: 85%;
+}
+.news .read-more__button {
+  height: 50px;
+  width: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: white;
+  font-family: "Fjalla One", "sans-serif";
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.news #read-more__main {
+  display: none;
+  margin: -80px 20px 80px auto;
+}
+.news img {
+  min-height: 300px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 2em auto;
+  object-fit: cover;
+}
+.news .report {
+  display: grid;
+  max-width: 100%;
+}
+.news .report .report__date {
+  margin-bottom: 1em;
+  font-size: 16px;
+  margin-left: clamp(5px, 5vw, 70px);
+}
+.news .report .report__car-tag {
+  width: 100px;
+  font-size: 14px;
+  padding: 0.5em 0;
+  margin: 0 0 1em clamp(5px, 5vw, 70px);
+  background: rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.news .report .report__title {
+  width: 80%;
+  font-size: clamp(25px, 5vw, 50px);
+  margin-left: clamp(5px, 5vw, 70px);
+}
+.news .news__last-button {
+  margin: 2em auto;
+  height: 50px;
+  width: 45%;
+  background: #181818;
+  font-family: "Roboto", "sans-serif";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.news .news__last-button:hover {
+  transform: scale(1.05);
+  background: rgba(20, 20, 20, 0.9);
+}

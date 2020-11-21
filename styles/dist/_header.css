@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Condensed", "sans serif";
+}
+.header .img__slider {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  overflow: hidden;
+}
+.header .img__slider .slides__container {
+  display: flex;
+  height: 100%;
+  width: 400%;
+}
+.header .img__slider .slides__container input {
+  display: none;
+}
+.header .img__slider .slides__container .navigation__container {
+  display: flex;
+  width: 25%;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  justify-content: center;
+  z-index: 2000;
+}
+.header .img__slider .slides__container .navigation__container .navigation {
+  display: flex;
+}
+.header .img__slider .slides__container .navigation__container .navigation span {
+  padding: 3px clamp(35px, 5vw, 60px);
+  margin: 0 1em;
+  background: rgba(131, 131, 131, 0.5);
+}
+.header .img__slider .slides__container .navigation__container .navigation span.active {
+  background: white;
+}
+.header .img__slider .slides__container .slide {
+  position: relative;
+  height: 100%;
+  width: 25%;
+}
+.header .img__slider .slides__container .slide h1 {
+  position: absolute;
+  bottom: clamp(25%, 10vw, 40%);
+  left: 0.4em;
+  z-index: 100;
+  color: white;
+  font-size: clamp(40px, 5vw, 80px);
+}
+.header .img__slider img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(85%);
+  -webkit-user-drag: none;
+}
+
+#slide1:checked ~ .navigation__container .navigation .auto-btn1 {
+  background: white;
+}
+
+#slide2:checked ~ .navigation__container .navigation .auto-btn2 {
+  background: white;
+}
+
+#slide3:checked ~ .navigation__container .navigation .auto-btn3 {
+  background: white;
+}

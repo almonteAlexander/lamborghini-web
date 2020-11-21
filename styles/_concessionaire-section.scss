@@ -1,0 +1,27 @@
+.concessionaire{
+    position: relative;
+    display: flex;
+    height: 700px;
+    width: 100%;
+    margin-top: -100px;
+    h2{
+        position: absolute;
+        color: white;
+        font-family: 'Fjalla One', 'sans-serif';
+        letter-spacing: 2px;
+    }
+    .title{
+        top: 32%;
+        left: 5%;
+        font-size: clamp(20px, 5vw, 50px);
+    }
+    .sub__title{
+        top: 48%;
+        left: 5%;
+        font-size: clamp(40px, 6vw, 100px);
+    }
+    img{
+        max-width: 100%;
+        object-fit: cover;
+    }
+}

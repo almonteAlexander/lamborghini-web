@@ -1,0 +1,71 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', 'sans serif';
+    .img__slider{
+        position: relative;
+        height: 550px;
+        width: 100%;
+        overflow: hidden;
+        .slides__container{
+            display: flex;
+            height: 100%;
+            width: 400%;
+            input{
+                display: none;
+            }
+            .navigation__container{
+                display: flex;
+                width: 25%;
+                position: absolute;
+                top: 90%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                justify-content: center;
+                z-index: 2000;
+                .navigation{
+                    display: flex;
+                    span{
+                        padding: 3px clamp(35px, 5vw, 60px);
+                        margin: 0 1em;
+                        background: rgba(131, 131, 131, 0.5);
+                        &.active{
+                            background: white;
+                        }
+                    }
+                }
+            }
+            .slide{
+                position: relative;
+                height: 100%;
+                width: 25%;
+                h1{
+                    position: absolute;
+                    bottom: clamp(25%, 10vw, 40%);
+                    left: 0.4em;
+                    z-index: 100;
+                    color: white;
+                    font-size: clamp(40px, 5vw, 80px);
+                }
+            }
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            filter: brightness(85%);
+            -webkit-user-drag: none;
+        }
+    }
+}
+
+#slide1:checked ~ .navigation__container .navigation .auto-btn1{
+    background: white;
+}
+#slide2:checked ~ .navigation__container .navigation .auto-btn2{
+    background: white;
+}
+#slide3:checked ~ .navigation__container .navigation .auto-btn3{
+    background: white;
+}

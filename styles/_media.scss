@@ -1,0 +1,56 @@
+@media screen and (min-width: 600px){
+    .menu__button{
+        display: none;
+    }
+    .nav ul{
+        display: flex;
+    }
+}
+@media screen and (max-width: 700px){
+    .models__container > .models{
+        flex-wrap: wrap;
+    }
+    .models__container > .models > img{
+        height: 300px;
+    }
+    .models__container > .models > img:not(#model__third){
+        width: 50%;
+    }
+    .models__container > .models > #model__third, .concessionaire{
+        width: 100%;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 745px){
+    #read-more__main{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .report{
+        grid-template-columns: 1fr 1fr;
+        img{
+            height: 330px;
+            margin-left: 50px;
+        }
+        .report__date, .report__car-tag, .report__title{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .report__date{
+            margin: 2em 0 1em 0;
+        }
+        .report__car-tag{
+            height: 30px;
+            margin-top: 4.5em !important;
+        }
+        .report__title{
+            margin: 2em 0 1em 0;
+        }
+        .second__report-title{
+            margin-top: 1.2em;
+        }
+    }
+}
